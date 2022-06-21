@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Bike</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <div id="storeName">
+        <h1>BikeList</h1>
+    </div>
+
+    <nav id="sellLink">
+        <a href="/bikes">Home</a>
+    </nav>
+
+    <div id="sellBikeForm">
+    <form id="new-form" action="/bikes" method="POST">
+        <label>Bike Name:</label>
+        <input name="name" type="text"><br><br>
+        <label>Bike Model:</label>
+        <input name="model" type="text"><br><br>
+        <label>Bike Price:</label>
+        <input type="number" name="price"><br><br>
+        <label>Bike Color:</label>
+        <input type="text" name="color"><br><br>
+        <input type="submit" value="Add Bike"> <br><br>
+
+        <form action="/bikes" method="POST" enctype="multipart/form-data">
+            <label for="image"> Upload Image:</label><br><br>
+            <input type="file" id="image"
+                name="img" value="">
+        </form>
+        
+        
+
+        
+
+    </form>
+    </div>  
+   
+   
+
+
+</body>
+</html>

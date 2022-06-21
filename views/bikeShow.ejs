@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Listing</title>
+</head>
+<body>
+
+    
+        <h1>BikeList</h1>
+    
+    
+    <nav>
+        <ul id="sellLink">
+            <a href="/bikes">Home</a>
+            <a href="/bikes/new"> Sell Bikes</a>
+        </ul>
+    </nav>
+
+    <div>
+    <h1>Bike Details Page</h1>
+    <h4>Name: <%= bike.name %></h4>
+    <h4>Model: <%= bike.model %></h4>
+    <h4>Price: <%= bike.price %></h4>
+    <h4>Color: <%= bike.color %></h4>
+    <h4>Image: <%= bike.img %></h4>
+    <img src="<%bike.img%>" alt="<%bike.img%>">
+    </div>
+
+    <form method="POST" action="/bikes/<%= bike._id %>?_method=PATCH">
+        Name: <input name="bike" type="text"> <br>
+        Model: <input name="model" type="text"> <br>
+        Price: <input name="price" type="number"> <br>
+        Color: <input name="color" type="text"> <br>
+        <!-- Image <input name="img" type="text"> <br> -->
+        <input type="submit" value="Edit Listing"> <br><br>
+
+    </form>
+
+    <form method="POST" action="/bikes/<%= bike._id %>?_method=DELETE">
+        <input type="submit" value="Delete Listing">
+    </form>
+
+
+</body>
+</html>

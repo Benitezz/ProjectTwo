@@ -1,0 +1,51 @@
+/* #storeName {
+    
+    text-align: center;
+} */
+
+h1 {
+    color: black;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+#logInContainer{
+    display: flexbox;
+}
+#logIn {
+    align-content: flex-end;
+    
+}
+
+#sellLink {
+    text-align: center;
+    margin: 10px 90px 40px 90px ;
+    padding-right: 35px;
+    padding-bottom: 0px;
+    /* background-color: lightblue; */
+    justify-content: space-between;
+    
+}
+/* #listItem{
+    display: inline flex;
+} */
+
+body{
+    background-color: lightgray;
+}
+
+#bikeList{
+    align-content: center;
+    color: green;
+    
+}
+
+#sellBikeForm{
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+    padding: 20px;
+}
