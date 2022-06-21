@@ -20,6 +20,6 @@ As a user, I would like to be able to see more information of a product by click
 As a user, I want to be able to purchase a bike and see that it has been sold to me and no longer available.
 As a user, I would like to be able to post my own bikes for sale.
 
-![](../../../Downloads/Untitled%20Diagram-Page-1.jpg)
+![](uploads/Untitled%20Diagram-Page-1.jpg)
 
-![](../../../Downloads/Untitled%20Diagram-Page-2.jpg)
+![](uploads/Untitled%20Diagram-Page-2.jpg)
