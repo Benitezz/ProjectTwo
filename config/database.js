@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 //Connecting database
-mongoose.connect('mongodb://localhost:27017/Project2'), {
+mongoose.connect(process.env.DATABASE_URL), {
     useNewUrlParser: true
 }
 
@@ -12,4 +12,6 @@ db.on('connected', ()=>{
 })
 
 
-// process.env.DATABASE_URL
+
+
+// 'mongodb://localhost:27017/Project2'
